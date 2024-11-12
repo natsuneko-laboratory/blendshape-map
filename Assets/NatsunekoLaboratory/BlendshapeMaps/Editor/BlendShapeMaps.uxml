@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+    xsi:schemaLocation="UnityEngine.UIElements ../../../../UIElementsSchema/UnityEngine.UIElements.xsd UnityEditor.UIElements ../../../../UIElementsSchema/UnityEditor.UIElements.xsd">
+    <engine:ScrollView class="min-h-full">
+        <engine:VisualElement class="container mx-auto my-2">
+            <engine:TextElement text="BlendShape Map" class="text-lg" />
+
+            <engine:VisualElement class="my-4">
+                <editor:PropertyField class="mb-1" name="transform" binding-path="_transform" />
+                <editor:PropertyField class="mb-1" name="renderer" binding-path="_renderer" />
+                <engine:VisualElement class="mb-1 border border-neutral-700 p-1" name="container" />
+
+                <editor:PropertyField class="mb-1" name="renderer" binding-path="_animations" />
+                <editor:PropertyField class="mb-1" name="renderer" binding-path="_controllers" />
+                <engine:Button name="submit" class="w-full" text="Remap Animation Clips" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:ScrollView>
+</engine:UXML>
